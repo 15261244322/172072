@@ -1,0 +1,99 @@
+/* pages/type/type.wxss */
+
+.po{
+    display: flex;
+  flex-direction: row;
+}
+.selected{
+    font-weight: bold;
+}
+
+.b{
+     margin: 10px;
+     display: flex;
+     flex-direction: row;
+     width: 80vw;
+     height: 8vh;
+}
+.a{
+    background:  yellowgreen;
+    height: 8vh;
+    width: 20%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.top{
+  background-color: darkorange;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+}
+.two{
+ font-size: 14px;
+ font-weight: 10vh;
+ width: 100%;
+ height: 92vh;
+
+}
+
+.a1{
+ 
+ line-height: 30px;
+ font-size: 15px;
+ font-weight: bold;
+ width: 100%;
+ display: flex；
+ 
+}
+.a11{
+    display: flex;
+    flex-direction: row;
+}
+.a11 image{
+    width: 32vw;
+    height: 180rpx;
+    margin: 5rpx;
+}
+.q1{
+    font-size: 13px;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.a111{
+    color: gray;
+}
+.a112{
+    color: gray;
+}
+.a2{
+ width: 100%;
+ font-size: 15px;
+ font-weight: bold;
+ line-height: 30px;
+}
+.a22{
+     display: flex;
+     flex-direction: row;
+}
+.a22 image{
+    width: 32vw;
+    height: 180rpx;
+    margin: 5rpx;
+}
+.q2{
+ font-size: 13px;
+ height: 10vh;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ color:  gray;   
+}
+
+
+

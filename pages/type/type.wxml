@@ -1,0 +1,61 @@
+<view class='po'>
+  <scroll-view class='top' scroll-x="ture">
+  <view class='c'>
+        <view class='b'>
+        <view class='{{currentType=="toutiao"?"selected":"normal"}}' bindtap='select' id="toutiao">头条 </view>
+        </view>
+        <view class='b'>
+            <view class='{{currentType=="shehui"?"selected":"normal"}}' bindtap='select' id="shehui">社会 </view>
+        </view>
+        <view class='b'>
+            <view class='{{currentType=="guonei"?"selected":"normal"}}' bindtap='select' id="guonei">国内</view>
+        </view>
+        <view class='b'>
+            <view class='{{currentType=="guoji"?"selected":"normal"}}' bindtap='select' id="guoji">国际</view>
+        </view>
+        <view class='b'>
+            <view class='{{currentType=="yule"?"selected":"normal"}}' bindtap='select' id="yule">娱乐</view>
+        </view>
+        <view class='b'>
+            <view class='{{currentType=="tiyu"?"selected":"normal"}}' bindtap='select' id="tiyu">体育</view>
+        </view>
+        <view class='b'>
+            <view class='{{currentType=="junshi"?"selected":"normal"}}' bindtap='select' id="junshi">军事</view>
+        </view>
+    </view>
+    </scroll-view>
+    <view class='a'>+</view>
+
+</view>
+
+<scroll-view class='two' scroll-y="ture">
+    <block wx:for="{{newlist}}" wx:key="uniquekey">
+        <view class='a1' bindtap='showDatail' id='{{item.url}}'> 
+              <view class='title'>
+                <text>{{item.title}}</text>
+               </view>
+            <view class='a11'>
+                <view>
+                    <image src='{{item.thumbnail_pic_s}}'/>
+                </view>
+                <view>
+                    <image src='{{item.thumbnail_pic_s02}}'/>
+                </view>
+                <view>
+                    <image src='{{item.thumbnail_pic_s03}}'/>
+                </view>
+            </view>
+            <view class='q1'>
+             <view class='a111'>{{item.author_name}}</view>
+             <view class='a112'>{{item.data}}</view>
+            </view>
+        </view>
+    </block>
+
+
+
+    
+
+    
+
+</scroll-view>
